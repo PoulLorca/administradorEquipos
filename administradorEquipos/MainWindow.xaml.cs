@@ -24,5 +24,11 @@ namespace administradorEquipos
         {
             InitializeComponent();
         }
+
+        private void Agregar_Click(object sender, RoutedEventArgs e)
+        {
+            Views.AgregarEquipo ventanaAgregar = new Views.AgregarEquipo();
+            ventanaAgregar.ShowDialog();
+        }
     }
 }

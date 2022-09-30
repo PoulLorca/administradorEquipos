@@ -5,12 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:administradorEquipos"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Mantenedor de Equipos" Height="450" Width="800">
     <Grid>
         <DockPanel>
             <Menu DockPanel.Dock="Top">
                 <MenuItem Header="Equipo">
-                    <MenuItem Header="Agregar"/>
+                    <MenuItem x:Name="Agregar" Header="Agregar" Click="Agregar_Click"/>
                     <MenuItem Header="Listar todos"/>
                 </MenuItem>
                 <MenuItem Header="Informacion">
