@@ -22,6 +22,18 @@ namespace administradorEquipos.Views
         public ListarEquipos()
         {
             InitializeComponent();
+
+            dgListaEquipos.ItemsSource = Models.EquipoCollection.Equipos;
+        }
+
+        private void Editar_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Eliminar_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

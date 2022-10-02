@@ -11,7 +11,7 @@
             <Menu DockPanel.Dock="Top">
                 <MenuItem Header="Equipo">
                     <MenuItem x:Name="Agregar" Header="Agregar" Click="Agregar_Click"/>
-                    <MenuItem Header="Listar todos"/>
+                    <MenuItem x:Name="ListarTodos" Header="Listar todos" Click="ListarTodos_Click"/>
                 </MenuItem>
                 <MenuItem Header="Informacion">
                     <MenuItem Header="Acerca de"/>

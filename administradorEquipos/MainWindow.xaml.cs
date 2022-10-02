@@ -30,5 +30,11 @@ namespace administradorEquipos
             Views.AgregarEquipo ventanaAgregar = new Views.AgregarEquipo();
             ventanaAgregar.ShowDialog();
         }
+
+        private void ListarTodos_Click(object sender, RoutedEventArgs e)
+        {
+            Views.ListarEquipos ventanaListar = new Views.ListarEquipos();
+            ventanaListar.ShowDialog();
+        }
     }
 }
