@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -28,7 +29,11 @@ namespace administradorEquipos.Views
 
         private void Editar_Click(object sender, RoutedEventArgs e)
         {
-
+            int index = dgListaEquipos.SelectedIndex;
+            Models.Equipo equipoEditar = Models.EquipoCollection.Equipos[index];
+            ActualizarEquipo ventanaActualizar = new ActualizarEquipo(equipoEditar, index);
+            ventanaActualizar.ShowDialog();
+            Close();
         }
 
         private void Eliminar_Click(object sender, RoutedEventArgs e)
