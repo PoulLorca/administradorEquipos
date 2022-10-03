@@ -36,5 +36,11 @@ namespace administradorEquipos
             Views.ListarEquipos ventanaListar = new Views.ListarEquipos();
             ventanaListar.ShowDialog();
         }
+
+        private void About_Click(object sender, RoutedEventArgs e)
+        {
+            Views.AcercaDe ventanaAbout = new Views.AcercaDe();
+            ventanaAbout.ShowDialog();
+        }
     }
 }

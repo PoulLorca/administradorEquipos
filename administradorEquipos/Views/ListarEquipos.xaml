@@ -38,7 +38,7 @@
                 <DataGridTemplateColumn Header="Eliminar">
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
-                            <Button x:Name="Eliminar" Content="Eliminar" Click="Eliminar_Click"/>
+                            <Button x:Name="Eliminar" Content="Eliminar" Click="Eliminar_Click" />
                         </DataTemplate>
                     </DataGridTemplateColumn.CellTemplate>
                 </DataGridTemplateColumn>

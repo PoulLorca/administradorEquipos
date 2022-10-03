@@ -14,7 +14,7 @@
                     <MenuItem x:Name="ListarTodos" Header="Listar todos" Click="ListarTodos_Click"/>
                 </MenuItem>
                 <MenuItem Header="Informacion">
-                    <MenuItem Header="Acerca de"/>
+                    <MenuItem x:Name="About" Header="Acerca de" Click="About_Click"/>
                 </MenuItem>
             </Menu>
         </DockPanel>

@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:administradorEquipos.Views"
         mc:Ignorable="d"
         Title="AcercaDe" Height="450" Width="800">
-    <Grid>
-        
+    <Grid Margin="20">
+        <Label x:Name="Info" VerticalAlignment="Center"  HorizontalAlignment="Center" >Developed by Poul Lorca ©</Label>
     </Grid>
 </Window>

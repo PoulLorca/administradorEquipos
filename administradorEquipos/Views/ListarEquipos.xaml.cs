@@ -33,7 +33,14 @@ namespace administradorEquipos.Views
 
         private void Eliminar_Click(object sender, RoutedEventArgs e)
         {
+            int index = dgListaEquipos.SelectedIndex;
+            Models.EquipoCollection.Equipos.RemoveAt(index);
+            dgListaEquipos.Items.Refresh();
+        }
 
+        private void Window_Activated(object sender, EventArgs e)
+        {
+            dgListaEquipos.Items.Refresh();
         }
     }
 }
