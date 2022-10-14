@@ -1,0 +1,24 @@
+﻿<Window x:Class="Equipo_GUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Equipo_GUI"
+        mc:Ignorable="d"
+        Title="Mantenedor de Equipos" Height="450" Width="800">
+    <Grid>
+        <DockPanel>
+            <Menu DockPanel.Dock="Top">
+                <MenuItem Header="Equipo">
+                    <MenuItem x:Name="Agregar" Header="Agregar" Click="Agregar_Click"/>
+                    <MenuItem x:Name="ListarTodos" Header="Listar todos" Click="ListarTodos_Click"/>
+                </MenuItem>
+                <MenuItem Header="Informacion">
+                    <MenuItem x:Name="Report" Header="Reportes" Click="Report_Click"/>
+                    <MenuItem x:Name="About" Header="Acerca de" Click="About_Click"/>
+                </MenuItem>
+            </Menu>
+            <DataGrid x:Name="dgEquipos" VerticalAlignment="Top" HorizontalAlignment="Center" Width="Auto" CanUserAddRows="False"/>
+        </DockPanel>
+    </Grid>
+</Window>
