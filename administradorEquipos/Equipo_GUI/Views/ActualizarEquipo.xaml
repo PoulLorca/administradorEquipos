@@ -41,7 +41,10 @@
         <TextBox x:Name="txtNombre" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Left" Width="150"/>
         <TextBox x:Name="txtCantidad" Grid.Column="2" Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Left" Width="150" PreviewTextInput="txtCantidad_PreviewTextInput"/>
         <TextBox x:Name="txtNombreDt" Grid.Column="2" Grid.Row="4" VerticalAlignment="Center" HorizontalAlignment="Left" Width="150"/>
-        <TextBox x:Name="txtTipoEquipo" Grid.Column="2" Grid.Row="6" VerticalAlignment="Center" HorizontalAlignment="Left" Width="150"/>
+        <ComboBox x:Name="txtTipoEquipo" Grid.Column="2" Grid.Row="6" VerticalAlignment="Center" HorizontalAlignment="Left" Width="150">
+            <ComboBoxItem>masculino</ComboBoxItem>
+            <ComboBoxItem>femenino</ComboBoxItem>
+        </ComboBox>
         <TextBox x:Name="txtCapitanEquipo" Grid.Column="2" Grid.Row="8" VerticalAlignment="Center" HorizontalAlignment="Left" Width="150"/>
         <CheckBox x:Name="chkSub21" Grid.Column="2" Grid.Row="10" VerticalAlignment="Center" HorizontalAlignment="Left" Content="Tiene sub 21?"/>
         <TextBox x:Name="txtIndex" Grid.Row="10" Visibility="Hidden"/>

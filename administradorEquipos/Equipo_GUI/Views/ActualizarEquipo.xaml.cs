@@ -41,8 +41,15 @@ namespace Equipo_GUI.Views
                 txtIndex.Text = id.ToString();
                 txtNombre.Text = equipo.NombreEquipo;
                 txtCantidad.Text = equipo.CantidadJugadores.ToString();
-                txtNombreDt.Text = equipo.NombreDt;
-                txtTipoEquipo.Text = equipo.TipoEquipo;
+                txtNombreDt.Text = equipo.NombreDt;                
+                if(equipo.TipoEquipo == "femenino")
+                {
+                    txtTipoEquipo.SelectedIndex = 1;
+                }
+                else
+                {
+                    txtTipoEquipo.SelectedIndex = 0;
+                }
                 txtCapitanEquipo.Text = equipo.CapitanEquipo;
                 chkSub21.IsChecked = (equipo.TieneSub21) ? true : false;
 
