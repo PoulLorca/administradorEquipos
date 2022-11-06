@@ -56,6 +56,11 @@
     <Compile Include="EquipoReportes.cs" />
     <Compile Include="EquiposCollection.cs" />
     <Compile Include="IPersistente.cs" />
+    <Compile Include="IsValidCantidadJugadores.cs" />
+    <Compile Include="IsValidCapitanEquipo.cs" />
+    <Compile Include="IsValidNombreDT.cs" />
+    <Compile Include="IsValidNombreEquipo.cs" />
+    <Compile Include="ObservableObject.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

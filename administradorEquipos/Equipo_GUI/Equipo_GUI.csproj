@@ -69,12 +69,10 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Validations\CantidadJugadoresCustomRule.cs" />
-    <Compile Include="Validations\CantidadJugadoresCustomRuleBase.cs" />
     <Compile Include="Validations\CapitanEquipoCustomRule.cs" />
     <Compile Include="Validations\NombreDTCustomRule.cs" />
     <Compile Include="Validations\NombreEquipoCustomRule.cs" />
     <Compile Include="Validations\NotNullOrEmptyRule.cs" />
-    <Compile Include="Validations\TipoEquipoCustomRule.cs" />
     <Compile Include="Views\AcercaDe.xaml.cs">
       <DependentUpon>AcercaDe.xaml</DependentUpon>
     </Compile>

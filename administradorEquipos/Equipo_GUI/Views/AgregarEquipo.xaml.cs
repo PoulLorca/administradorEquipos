@@ -22,16 +22,19 @@ namespace Equipo_GUI.Views
     {
         private static Regex n_regex = new Regex("[^0-9]+");
 
+        Equipo_Negocio.Equipo equipo;
+
         public AgregarEquipo()
         {
             InitializeComponent();
+            equipo = new Equipo_Negocio.Equipo();
+            this.DataContext = equipo;
         }
 
         private void btnGuardar_Click(object sender, RoutedEventArgs e)
         {
             try
-            {
-                Equipo_Negocio.Equipo equipo = new Equipo_Negocio.Equipo();
+            {                
                 equipo.NombreEquipo = txtNombre.Text;
                 equipo.CantidadJugadores = Convert.ToInt32(txtCantidad.Text);
                 equipo.NombreDt = txtNombreDt.Text;

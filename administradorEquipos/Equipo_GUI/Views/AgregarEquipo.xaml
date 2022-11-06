@@ -39,23 +39,50 @@
         <Label x:Name="lblCapitanEquipo" Grid.Row="8" VerticalAlignment="Center" HorizontalAlignment="Center" Content="Capitan del Equipo"/>
 
         <!--Inputs-->
-        <TextBox x:Name="txtNombre" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Left" Width="150">
+        <TextBox x:Name="txtNombre" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Left" Width="150" MaxLength="25" Validation.ErrorTemplate="{StaticResource TextBoxErrorTemplate}">
             <TextBox.Text>
                 <Binding Path="NombreEquipo" UpdateSourceTrigger="PropertyChanged" ValidatesOnDataErrors="True">
                     <Binding.ValidationRules>
+                        <validations:NombreEquipoCustomRule/>
                         <validations:NotNullOrEmptyRule/>
                     </Binding.ValidationRules>
                 </Binding>
             </TextBox.Text>
         </TextBox>
-        <TextBox x:Name="txtCantidad" Grid.Column="2" Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Left" Width="150" PreviewTextInput="txtCantidad_PreviewTextInput"/>
-        <TextBox x:Name="txtNombreDt" Grid.Column="2" Grid.Row="4" VerticalAlignment="Center" HorizontalAlignment="Left" Width="150"/>
-        <ComboBox x:Name="txtTipoEquipo" Grid.Column="2" Grid.Row="6" VerticalAlignment="Center" HorizontalAlignment="Left" Width="150">
+        <TextBox x:Name="txtCantidad" Grid.Column="2" Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Left" Width="150" PreviewTextInput="txtCantidad_PreviewTextInput" MaxLength="25" Validation.ErrorTemplate="{StaticResource TextBoxErrorTemplate}">
+            <TextBox.Text>
+                <Binding Path="CantidadJugadores" UpdateSourceTrigger="PropertyChanged" ValidatesOnDataErrors="True">
+                    <Binding.ValidationRules>
+                        <validations:CantidadJugadoresCustomRule/>
+                    </Binding.ValidationRules>
+                </Binding>
+            </TextBox.Text>
+        </TextBox>
+        <TextBox x:Name="txtNombreDt" Grid.Column="2" Grid.Row="4" VerticalAlignment="Center" HorizontalAlignment="Left" Width="150" MaxLength="30" Validation.ErrorTemplate="{StaticResource TextBoxErrorTemplate}">
+            <TextBox.Text>
+                <Binding Path="NombreDt" UpdateSourceTrigger="PropertyChanged" ValidatesOnDataErrors="True">
+                    <Binding.ValidationRules>
+                        <validations:NombreDTCustomRule/>
+                        <validations:NotNullOrEmptyRule/>
+                    </Binding.ValidationRules>
+                </Binding>
+            </TextBox.Text>
+        </TextBox>
+        <ComboBox x:Name="txtTipoEquipo" Grid.Column="2" Grid.Row="6" VerticalAlignment="Center" HorizontalAlignment="Left" Width="150" SelectedValue="{Binding Path=TipoEquipo}">
             <ComboBoxItem>masculino</ComboBoxItem>
             <ComboBoxItem>femenino</ComboBoxItem>
         </ComboBox>
-        <TextBox x:Name="txtCapitanEquipo" Grid.Column="2" Grid.Row="8" VerticalAlignment="Center" HorizontalAlignment="Left" Width="150"/>
-        <CheckBox x:Name="chkSub21" Grid.Column="2" Grid.Row="10" VerticalAlignment="Center" HorizontalAlignment="Left" Content="Tiene sub 21?"/>
+        <TextBox x:Name="txtCapitanEquipo" Grid.Column="2" Grid.Row="8" VerticalAlignment="Center" HorizontalAlignment="Left" Width="150" MaxLength="30" Validation.ErrorTemplate="{StaticResource TextBoxErrorTemplate}">
+            <TextBox.Text>
+                <Binding Path="CapitanEquipo" UpdateSourceTrigger="PropertyChanged" ValidatesOnDataErrors="True">
+                    <Binding.ValidationRules>
+                        <validations:CapitanEquipoCustomRule/>
+                        <validations:NotNullOrEmptyRule/>
+                    </Binding.ValidationRules>
+                </Binding>
+            </TextBox.Text>
+        </TextBox>
+        <CheckBox x:Name="chkSub21" Grid.Column="2" Grid.Row="10" VerticalAlignment="Center" HorizontalAlignment="Left" Content="Tiene sub 21?" IsChecked="{Binding TieneSub21}"/>
 
         <!--Button-->
         <Button x:Name="btnGuardar" Grid.Column="2" Grid.Row="12" VerticalAlignment="Center" HorizontalAlignment="Left" Content="Guardar Equipo" Click="btnGuardar_Click"/>

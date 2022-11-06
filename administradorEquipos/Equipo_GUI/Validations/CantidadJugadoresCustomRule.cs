@@ -14,10 +14,12 @@ namespace Equipo_GUI.Validations
         {
             string val = value as string;
             int len = val.Length;
+            int min = 16;
+            int max = 25;
 
-            if (len <= 8 || len >= 25)
+            if (len <= min || len >= max)
             {
-                return new ValidationResult(false, "Nombre del equipo debe ser entre 8 y 25 carácteres");
+                return new ValidationResult(false, "Nombre del equipo debe ser entre "+ min + "  y "+ max + "carácteres");
             }
 
             return new ValidationResult(true, null);
