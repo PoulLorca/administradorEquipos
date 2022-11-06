@@ -51,6 +51,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AES_Helper.cs" />
     <Compile Include="CommonBC.cs" />
     <Compile Include="Equipo.cs" />
     <Compile Include="EquipoReportes.cs" />

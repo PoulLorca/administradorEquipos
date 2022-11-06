@@ -23,9 +23,9 @@ namespace Equipo_Negocio
                 e.Id = equipo.EquipoId;
                 e.NombreEquipo = equipo.NombreEquipo;
                 e.CantidadJugadores = equipo.CantidadJugadores;
-                e.NombreDt = equipo.NombreDT;
+                e.NombreDt = AES_Helper.DecryptString(equipo.NombreDT);
                 e.TipoEquipo = equipo.TipoEquipo;
-                e.CapitanEquipo = equipo.CapitanEquipo;
+                e.CapitanEquipo = AES_Helper.DecryptString(equipo.CapitanEquipo);
                 e.TieneSub21 = equipo.TieneSub21;
 
                 equiposList.Add(e);

@@ -87,9 +87,9 @@ namespace Equipo_Negocio
                 CommonBC.ModeloEquipo.spEquipoSave(
                 this.NombreEquipo,
                 this.CantidadJugadores,
-                this.NombreDt,
+                AES_Helper.EncryptString(this._nombreDT),
                 this.TipoEquipo,
-                this.CapitanEquipo,
+                AES_Helper.EncryptString(this._capitanEquipo),
                 this.TieneSub21
                 );
 
@@ -112,9 +112,9 @@ namespace Equipo_Negocio
 
                 this.NombreEquipo = equipo.NombreEquipo;
                 this.CantidadJugadores = equipo.CantidadJugadores;
-                this.NombreDt = equipo.NombreDT;
+                this.NombreDt = AES_Helper.DecryptString(equipo.NombreDT);
                 this.TipoEquipo = equipo.TipoEquipo;
-                this.CapitanEquipo = equipo.CapitanEquipo;
+                this.CapitanEquipo = AES_Helper.DecryptString(equipo.CapitanEquipo);
                 this.TieneSub21 = equipo.TieneSub21;
 
                 return true;
@@ -135,9 +135,9 @@ namespace Equipo_Negocio
                     this.Id,
                     this.NombreEquipo,
                     this.CantidadJugadores,
-                    this.NombreDt,
+                    AES_Helper.EncryptString(this.NombreDt),
                     this.TipoEquipo,
-                    this.CapitanEquipo,
+                    AES_Helper.EncryptString(this.CapitanEquipo),
                     this.TieneSub21
                     );
 
