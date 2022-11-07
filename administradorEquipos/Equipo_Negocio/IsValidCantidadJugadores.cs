@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,9 +13,11 @@ namespace Equipo_Negocio
         public override bool IsValid(object value)
         {
             bool res = true;
-            int len = value.ToString().Length;
+            int len = int.Parse(value.ToString());
             int min = 16;
             int max = 25;
+
+            Trace.WriteLine(len);
 
             if (!string.IsNullOrEmpty(value.ToString()))
             {
@@ -25,6 +28,7 @@ namespace Equipo_Negocio
                 else
                 {
                     res = true;
+
                 }
             }
             return res;

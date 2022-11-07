@@ -30,7 +30,7 @@ namespace Equipo_Negocio
                 if(value.ToString().Length <= 8 || value.ToString().Length >= 25)
                     throw new ArgumentNullException(null, "El largo no corresponde");
 
-                ValidateProperty(value);
+                //ValidateProperty(value);
                 OnPropertyChanged(ref _nombreEquipo, value);
             }
         }
@@ -41,7 +41,7 @@ namespace Equipo_Negocio
             get { return _cantidadJugadores; }
             set
             {
-                ValidateProperty(value);
+                //ValidateProperty(value);
                 OnPropertyChanged(ref _cantidadJugadores, value);
             } 
         }
@@ -53,7 +53,7 @@ namespace Equipo_Negocio
             get { return _nombreDT; }
             set
             {
-                ValidateProperty(value);
+                //ValidateProperty(value);
                 OnPropertyChanged(ref _nombreDT, value);
             }
         }
@@ -66,12 +66,13 @@ namespace Equipo_Negocio
             get { return _capitanEquipo; }
             set
             {
-                ValidateProperty(value);
+                //ValidateProperty(value);
                 OnPropertyChanged(ref _capitanEquipo, value);
             }
         }
         public bool TieneSub21 { get; set; }
 
+        /*
         private void ValidateProperty<T>(T value, [CallerMemberName] string name = "")
         {
             Validator.ValidateProperty(value, new ValidationContext(this, null, null)
@@ -79,6 +80,7 @@ namespace Equipo_Negocio
                 MemberName = name
             });
         }
+        */
 
         public bool Create()
         {

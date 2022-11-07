@@ -13,7 +13,7 @@ namespace Equipo_GUI.Validations
         public override ValidationResult Validate(object value, CultureInfo cultureInfo)
         {
             string val = value as string;
-            int len = val.Length;
+            int len = int.Parse(val) ;
             int min = 16;
             int max = 25;
 
