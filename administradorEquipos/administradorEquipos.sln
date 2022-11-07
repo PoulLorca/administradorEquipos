@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Equipo_DALC", "Equipo_DALC\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Equipo_Negocio", "Equipo_Negocio\Equipo_Negocio.csproj", "{506697AA-B5C1-4EDC-B4FC-E55946C19000}"
 EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SetupEquipo", "SetupEquipo\SetupEquipo.vdproj", "{4B475841-B7C2-4453-9D29-7455766E2E76}"
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "EquipoSetup", "EquipoSetup\EquipoSetup.vdproj", "{4CCE48C6-7076-41A7-B8F2-EF41E9CFDBD2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,9 +29,8 @@ Global
 		{506697AA-B5C1-4EDC-B4FC-E55946C19000}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{506697AA-B5C1-4EDC-B4FC-E55946C19000}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{506697AA-B5C1-4EDC-B4FC-E55946C19000}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4B475841-B7C2-4453-9D29-7455766E2E76}.Debug|Any CPU.ActiveCfg = Release
-		{4B475841-B7C2-4453-9D29-7455766E2E76}.Debug|Any CPU.Build.0 = Release
-		{4B475841-B7C2-4453-9D29-7455766E2E76}.Release|Any CPU.ActiveCfg = Release
+		{4CCE48C6-7076-41A7-B8F2-EF41E9CFDBD2}.Debug|Any CPU.ActiveCfg = Debug
+		{4CCE48C6-7076-41A7-B8F2-EF41E9CFDBD2}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

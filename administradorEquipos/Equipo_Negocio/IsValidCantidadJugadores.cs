@@ -15,9 +15,7 @@ namespace Equipo_Negocio
             bool res = true;
             int len = int.Parse(value.ToString());
             int min = 16;
-            int max = 25;
-
-            Trace.WriteLine(len);
+            int max = 25;            
 
             if (!string.IsNullOrEmpty(value.ToString()))
             {
